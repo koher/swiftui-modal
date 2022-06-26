@@ -11,6 +11,8 @@
 		D624BB5128688D7E0047BFF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624BB5028688D7E0047BFF2 /* ContentView.swift */; };
 		D624BB5328688D7F0047BFF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D624BB5228688D7F0047BFF2 /* Assets.xcassets */; };
 		D624BB5628688D7F0047BFF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D624BB5528688D7F0047BFF2 /* Preview Assets.xcassets */; };
+		D624BB5F28688EC40047BFF2 /* SimplePresentAndDismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624BB5E28688EC40047BFF2 /* SimplePresentAndDismissView.swift */; };
+		D624BB6228688F570047BFF2 /* SwiftUIModal in Frameworks */ = {isa = PBXBuildFile; productRef = D624BB6128688F570047BFF2 /* SwiftUIModal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		D624BB5028688D7E0047BFF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D624BB5228688D7F0047BFF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D624BB5528688D7F0047BFF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D624BB5D28688E690047BFF2 /* SwiftUIModal */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIModal; path = ..; sourceTree = "<group>"; };
+		D624BB5E28688EC40047BFF2 /* SimplePresentAndDismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePresentAndDismissView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D624BB6228688F570047BFF2 /* SwiftUIModal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +40,10 @@
 		D624BB4228688D7E0047BFF2 = {
 			isa = PBXGroup;
 			children = (
+				D624BB5C28688E690047BFF2 /* Packages */,
 				D624BB4D28688D7E0047BFF2 /* SwiftUIModalCheck */,
 				D624BB4C28688D7E0047BFF2 /* Products */,
+				D624BB6028688F570047BFF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +60,7 @@
 			children = (
 				D624BB4E28688D7E0047BFF2 /* SwiftUIModalCheckApp.swift */,
 				D624BB5028688D7E0047BFF2 /* ContentView.swift */,
+				D624BB5E28688EC40047BFF2 /* SimplePresentAndDismissView.swift */,
 				D624BB5228688D7F0047BFF2 /* Assets.xcassets */,
 				D624BB5428688D7F0047BFF2 /* Preview Content */,
 			);
@@ -65,6 +73,21 @@
 				D624BB5528688D7F0047BFF2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D624BB5C28688E690047BFF2 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D624BB5D28688E690047BFF2 /* SwiftUIModal */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		D624BB6028688F570047BFF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +106,9 @@
 			dependencies = (
 			);
 			name = SwiftUIModalCheck;
+			packageProductDependencies = (
+				D624BB6128688F570047BFF2 /* SwiftUIModal */,
+			);
 			productName = SwiftUIModalCheck;
 			productReference = D624BB4B28688D7E0047BFF2 /* SwiftUIModalCheck.app */;
 			productType = "com.apple.product-type.application";
@@ -137,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D624BB5F28688EC40047BFF2 /* SimplePresentAndDismissView.swift in Sources */,
 				D624BB5128688D7E0047BFF2 /* ContentView.swift in Sources */,
 				D624BB4F28688D7E0047BFF2 /* SwiftUIModalCheckApp.swift in Sources */,
 			);
@@ -339,6 +366,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D624BB6128688F570047BFF2 /* SwiftUIModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIModal;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D624BB4328688D7E0047BFF2 /* Project object */;
 }
