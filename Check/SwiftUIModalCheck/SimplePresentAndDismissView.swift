@@ -8,17 +8,20 @@ struct SimplePresentAndDismissView: View {
     @State private var presentsChild: Bool = false
 
     var body: some View {
-        Button("Present") {
-            presentsChild = true
+        ZStack {
+            Color.green
+            Button("Present") {
+                presentsChild = true
+            }
         }
-        .modal(isPresented: $presentsChild, presentationStyle: presentationStyle) {
-            Color.yellow
-                .ignoresSafeArea()
-                .overlay {
-                    Button("Dismiss") {
-                        presentsChild = false
-                    }
-                }
+        .modal(isPresented: $presentsChild, presentationStyle: presentationStyle, backgroundColor: .systemGray.withAlphaComponent(0.5)) {
+            Button("Dismiss") {
+                presentsChild = false
+            }
+            .background {
+                Color.yellow
+                    .frame(width: 200, height: 200)
+            }
         }
     }
 }
