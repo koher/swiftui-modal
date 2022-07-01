@@ -60,7 +60,6 @@ private struct ModalModifier<Item: Identifiable, ModalContent: View>: ViewModifi
                 onDismiss: onDismiss,
                 content: modalContent
             )
-                .frame(width: 0, height: 0)
             content
         }
     }
